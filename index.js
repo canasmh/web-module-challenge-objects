@@ -114,8 +114,16 @@ Use the addReview function below to do the following:
 */
 
 
-function addReview(/*Your Code Here */){
-  /*Your Code Here */
+function addReview(reviews, name, rating, feedback){
+  const newReview = {
+    name: name, 
+    rating: rating,
+    feedback: feedback
+  };
+
+  reviews.push(newReview);
+
+  return reviews;
 }
 
 
