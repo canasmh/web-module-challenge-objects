@@ -61,7 +61,13 @@ const burger = {
   name: "Burger", 
   price: 18, 
   category: "Lunch", 
-  
+  discount: function(title) {
+    if (title === "teacher" || title === "student") {
+      return this.price * (1 - 0.25); // Could be simplified but nice for transparency
+    } else {
+      return this.price * (1 - 0.1); // ditto
+    }
+  }
 }
 
 
